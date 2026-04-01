@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#b7cf95",
+              "on-secondary-container": "#636539",
+              "surface-bright": "#fef7ff",
+              "primary-fixed": "#d3ebaf",
+              "outline-variant": "#c5c8ba",
+              "primary-container": "#465a2c",
+              "outline": "#75786c",
+              "inverse-surface": "#322f37",
+              "on-tertiary-fixed": "#25094d",
+              "on-error": "#ffffff",
+              "secondary-container": "#e2e3ac",
+              "surface-dim": "#dfd7e3",
+              "on-primary": "#ffffff",
+              "on-background": "#1d1a22",
+              "on-surface-variant": "#45483e",
+              "tertiary": "#482f70",
+              "surface": "#fef7ff",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "primary": "#304217",
+              "background": "#fef7ff",
+              "tertiary-fixed": "#ecdcff",
+              "inverse-on-surface": "#f6eefa",
+              "on-primary-container": "#b9d097",
+              "error": "#ba1a1a",
+              "on-secondary-fixed-variant": "#474920",
+              "surface-container-high": "#ede6f1",
+              "secondary-fixed": "#e5e6af",
+              "inverse-primary": "#b7cf95",
+              "secondary": "#5f6136",
+              "on-primary-fixed": "#102000",
+              "secondary-fixed-dim": "#c8ca95",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#d7bdff",
+              "on-secondary-fixed": "#1b1d00",
+              "tertiary-fixed-dim": "#d5baff",
+              "surface-variant": "#e7e0eb",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1d1a22",
+              "on-secondary": "#ffffff",
+              "surface-container-highest": "#e7e0eb",
+              "on-tertiary-fixed-variant": "#523a7b",
+              "surface-tint": "#506536",
+              "tertiary-container": "#604789",
+              "surface-container": "#f3ebf7",
+              "surface-container-low": "#f9f1fd",
+              "on-primary-fixed-variant": "#394d20"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fef7ff;
+            color: #1d1a22;
+        }
+        h1, h2, h3 {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md fixed top-0 w-full z-50">
+<nav class="flex justify-between items-center w-full px-8 py-6 max-w-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-lime-900 dark:text-lime-200" data-icon="menu">menu</span>
+<a href="/"><span class="text-2xl font-serif tracking-widest text-lime-900 dark:text-lime-100">ARBORETUM</span></a>
+</div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-lime-700 dark:hover:text-lime-300 transition-colors duration-300 font-label text-xs uppercase tracking-[0.05em]" href="#">Design Philosophy</a>
+<a class="text-lime-900 dark:text-lime-100 font-bold uppercase tracking-[0.05em] text-xs transition-colors duration-300" href="/services/">Services</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-lime-700 dark:hover:text-lime-300 transition-colors duration-300 font-label text-xs uppercase tracking-[0.05em]" href="/portfolio/">Our Portfolio</a>
+<a class="text-lime-900 dark:text-lime-100 font-bold font-label text-xs uppercase tracking-[0.05em]" href="/contact-us/">Contact Studio</a>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="px-8 md:px-24 mb-24">
+<div class="max-w-4xl">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-6 block">Inquiries</span>
+<h1 class="text-5xl md:text-7xl font-serif text-primary leading-tight mb-8">Let us cultivate your vision into a living masterpiece.</h1>
+</div>
+</section>
+<!-- Main Layout: Asymmetric Grid -->
+<section class="px-8 md:px-24 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Contact Form Area -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-10 md:p-16 border-none">
+<h2 class="text-3xl font-serif mb-12 text-primary">Start a Conversation</h2>
+<form class="space-y-12">
+<div class="relative">
+<label class="font-label text-xs uppercase tracking-widest text-outline mb-2 block" for="name">Full Name</label>
+<input class="w-full bg-transparent border-b border-outline-variant/30 py-3 focus:outline-none focus:border-primary transition-colors font-body placeholder-zinc-300" id="name" name="name" placeholder="Your name here" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label text-xs uppercase tracking-widest text-outline mb-2 block" for="email">Email Address</label>
+<input class="w-full bg-transparent border-b border-outline-variant/30 py-3 focus:outline-none focus:border-primary transition-colors font-body placeholder-zinc-300" id="email" name="email" placeholder="hello@example.com" type="email"/>
+</div>
+<div class="relative">
+<label class="font-label text-xs uppercase tracking-widest text-outline mb-2 block" for="message">Project Vision</label>
+<textarea class="w-full bg-transparent border-b border-outline-variant/30 py-3 focus:outline-none focus:border-primary transition-colors font-body placeholder-zinc-300 resize-none" id="message" name="message" placeholder="Briefly describe your garden's potential..." rows="4"></textarea>
+</div>
+<div class="pt-6">
+<button class="bg-primary hover:bg-primary-container text-white px-12 py-5 font-label text-xs uppercase tracking-[0.15em] transition-all duration-300 flex items-center gap-3" type="submit">
+                            Send Inquiry
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Sidebar Info Area -->
+<div class="lg:col-span-5 space-y-20 lg:pl-12">
+<!-- Office Section -->
+<div class="space-y-6">
+<h3 class="text-2xl font-serif text-primary">The Studio</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-outline" data-icon="location_on">location_on</span>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant">
+                                422 Botanical Mews,<br/>
+                                Chelsea, London SW3 4LQ
+                            </p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-outline" data-icon="call">call</span>
+<p class="font-body text-lg text-on-surface-variant">+44 (0) 20 7946 0128</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-outline" data-icon="mail">mail</span>
+<p class="font-body text-lg text-on-surface-variant">studio@arboretum-design.com</p>
+</div>
+</div>
+</div>
+<!-- Social Links -->
+<div class="space-y-6">
+<h3 class="font-label text-xs uppercase tracking-[0.2em] text-outline">Digital Presence</h3>
+<div class="flex gap-8">
+<a class="group flex items-center gap-3 text-primary hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="photo_camera">photo_camera</span>
+<span class="font-label text-xs uppercase tracking-widest group-hover:underline">Instagram</span>
+</a>
+<a class="group flex items-center gap-3 text-primary hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="grid_view">grid_view</span>
+<span class="font-label text-xs uppercase tracking-widest group-hover:underline">Pinterest</span>
+</a>
+</div>
+</div>
+<!-- Decorative Image / Mood -->
+<div class="relative overflow-hidden group">
+<img alt="Architectural garden detail" class="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close-up of a minimalist concrete garden fountain with moss-covered stone and soft dappled sunlight through willow branches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYh3v_9AdrtbrhYsrZmYSsxEgeFxkpJkUCfdwTX29W5pVZa0Q7q_mA5JjWDcaYuNp8lQNAhYbX8rbfv6tR_i32Uk7AcuYr6nN6r5F2-nMVvd-uf0WCGhIBQKDj2bva1JtyDMRs8EVAv6I6KQJR4YLWEAjns6pkCQPTQEHOYu-Rug9axFKhdQHVdzdTjwbbdU1X9V7oE9yvRLDT0SaZRQWvXwbyq8i4CbCLEuIMjY7GfF3lBMOlqJ7IUoUAwY4CXf4GGzQSt2adM2bA"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+</section>
+<!-- Map Section (Tonal Shift) -->
+<section class="mt-24 px-8 md:px-24">
+<div class="bg-surface-container-high w-full h-[400px] flex items-center justify-center relative overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-luminosity" data-alt="Elegant monochromatic architectural map overlay showing urban green spaces and garden plots in a minimalist aesthetic" data-location="London" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoVA3fg6dAYp7Ku2Xz-yyUWTVP7RROAh6QIvu0de0veddfCI40cRLjr72GmYpO0dr522xQYEAIhZPyhCk6Y7TI0G0NrUBxuc2kmRanBvkplBwTPIJIjAQ19MCIWRsPCpVpfC1zI4rtezbLiiM0ENsS1csPFSomOnCbleKfs93NCxFAlFz5Yt6D_vlZAiUhdMKfFu4fIp1wofDclTCDnUI906l-IQmizO5umRcfTmHj4AcHVTZvNvIB0L3bLTJiUKA8MFcv2k1DpY-A"/>
+<div class="z-10 text-center">
+<p class="font-label text-xs uppercase tracking-[0.3em] text-primary mb-4">Site Visits Available By Appointment</p>
+<button class="font-serif text-lg border-b border-primary/30 hover:border-primary transition-colors text-primary">View Global Studio Locations</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-100 dark:bg-zinc-900 w-full py-20 mt-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 md:px-24 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-serif text-lime-900 dark:text-lime-100 uppercase">ARBORETUM</div>
+<p class="font-body text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed max-w-xs">
+                    Crafting timeless landscapes where architectural precision meets the raw elegance of nature.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-xs uppercase tracking-widest text-lime-900 dark:text-lime-200 mb-2">Navigation</h4>
+<a class="text-zinc-600 dark:text-zinc-400 font-label text-xs uppercase tracking-widest hover:underline hover:decoration-lime-900 dark:hover:decoration-lime-100 transition-all" href="#">Design Philosophy</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-label text-xs uppercase tracking-widest hover:underline hover:decoration-lime-900 dark:hover:decoration-lime-100 transition-all" href="/portfolio/">Our Portfolio</a>
+<a class="text-lime-900 dark:text-lime-100 underline decoration-1 underline-offset-4 font-label text-xs uppercase tracking-widest" href="/contact-us/">Contact Studio</a>
+</div>
+<div class="space-y-6">
+<h4 class="font-label text-xs uppercase tracking-widest text-lime-900 dark:text-lime-200">Legal</h4>
+<p class="font-body text-zinc-600 dark:text-zinc-400 text-xs leading-relaxed">
+                    © 2024 Architectural Arboretum. All Rights Reserved.
+                </p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-zinc-400 text-lg" data-icon="spa">spa</span>
+<span class="material-symbols-outlined text-zinc-400 text-lg" data-icon="architecture">architecture</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
